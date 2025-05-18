@@ -1,3 +1,47 @@
+"""
+Desafio – Sistema de Análise de Votação com Penalidades e Recompensas
+
+Objetivo:
+Simular um sistema de votação de um reality show com regras específicas de penalização e recompensa.
+
+Participantes:
+- Entre 3 e 10 nomes de participantes.
+
+Entrada:
+- Uma lista de votos no formato "Fulano votou em Ciclano".
+- Exemplo:
+  [
+    "Maria votou em João",
+    "João votou em Carla",
+    "Carla votou em João",
+    "Maria votou em João"
+  ]
+
+Regras:
+1. Um participante **não pode votar em si mesmo** – votos assim são desconsiderados.
+2. Se alguém **votar mais de uma vez na mesma pessoa**, apenas o **primeiro voto** é contabilizado.
+3. Cada voto **recebido** equivale a **1 ponto negativo**.
+4. O participante com **mais votos negativos** é **eliminado**.
+5. Se houver empate:
+   - Elimina-se quem recebeu o **último voto mais cedo** (posição menor na lista de votos).
+6. O(s) participante(s) com **menos votos negativos** são **recompensados**.
+   - Se houver empate, todos os menos votados recebem recompensa.
+
+Saídas esperadas:
+- Tabela de votos por participante.
+- Nome do eliminado e recompensado(s).
+- Lista final dos participantes (sem o eliminado).
+
+Objetivo adicional:
+O desafio deve ser resolvido usando fundamentos de Python como:
+- Listas, tuplas, dicionários, sets
+- Controle de fluxo (if, for)
+- Manipulação de strings
+- Estruturação lógica e clareza
+
+Tempo estimado para resolução: 30 a 50 minutos.
+"""
+
 nomes_participantes = ["Matheus", "Taiane", "Roberta", "Joao", "Maria", "Roberto"]
 votos_participantes = ["Maria votou em Joao",
     "Joao votou em Taiane",
