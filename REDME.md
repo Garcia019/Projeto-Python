@@ -15,7 +15,7 @@ Revisar os principais fundamentos da linguagem Python de forma ativa, estruturad
 
 ## 🚀 Metodologia
 
-- Um notebook por aula: `secao_XX_aula_XX_nome.ipynb`
+- Um notebook por aula: `SXXAXX_TITULO.ipynb` (ex: `S05A45_NUMEROS#01.ipynb`)
 - Cada notebook contém código prático + explicações
 - Curso Python 3 - Curso Completo do Básico ao Avançado
 - Commits diários no final de cada sessão de estudo
@@ -25,7 +25,7 @@ Revisar os principais fundamentos da linguagem Python de forma ativa, estruturad
 
 Este projeto faz parte do meu plano de 30 dias de disciplina e execução com 2h diárias. Ao final deste ciclo, servirá como base técnica para iniciar um projeto de IA gráfica com Python.
 
-⚠️ Nota: No início do curso, os registros estavam concentrados em um único notebook por seção. A partir da aula 45, passei a utilizar um notebook separado por aula, visando melhor organização, versionamento e leitura futura.
+⚠️ Nota: No início do curso, os registros estavam organizados em um único notebook por seção (ex: `secao_05_fundamentos_python.ipynb`). A partir do Dia 5 do projeto, essa estrutura foi desmembrada em arquivos individuais por aula, seguindo o padrão `SXXAXX_TITULO.ipynb`, para facilitar rastreamento, versionamento e reusabilidade.
 
 ---
 
