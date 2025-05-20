@@ -1,8 +1,9 @@
 """
-Desafio – Sistema de Análise de Votação com Penalidades e Recompensas
+Desafio : Sistema de Análise de Votação com Penalidades e Recompensas
 
 Objetivo:
-Simular um sistema de votação de um reality show com regras específicas de penalização e recompensa.
+Simular um sistema de votação de um reality show com regras específicas
+de penalização e recompensa.
 
 Participantes:
 - Entre 3 e 10 nomes de participantes.
@@ -18,12 +19,15 @@ Entrada:
   ]
 
 Regras:
-1. Um participante **não pode votar em si mesmo** – votos assim são desconsiderados.
-2. Se alguém **votar mais de uma vez na mesma pessoa**, apenas o **primeiro voto** é contabilizado.
+1. Um participante **não pode votar em si mesmo**
+votos assim são desconsiderados.
+2. Se alguém **votar mais de uma vez na mesma pessoa**, apenas o
+**primeiro voto** é contabilizado.
 3. Cada voto **recebido** equivale a **1 ponto negativo**.
 4. O participante com **mais votos negativos** é **eliminado**.
 5. Se houver empate:
-   - Elimina-se quem recebeu o **último voto mais cedo** (posição menor na lista de votos).
+   - Elimina-se quem recebeu o **último voto mais cedo**
+    (posição menor na lista de votos).
 6. O(s) participante(s) com **menos votos negativos** são **recompensados**.
    - Se houver empate, todos os menos votados recebem recompensa.
 
@@ -42,18 +46,19 @@ O desafio deve ser resolvido usando fundamentos de Python como:
 Tempo estimado para resolução: 30 a 50 minutos.
 """
 
-nomes_participantes = ["Matheus", "Taiane", "Roberta", "Joao", "Maria", "Roberto"]
+nomes_participantes = ["Matheus", "Taiane", "Roberta", "Joao",
+                       "Maria", "Roberto"]
 votos_participantes = ["Maria votou em Joao",
-    "Joao votou em Taiane",
-    "Taiane votou em Joao",
-    "Matheus votou em Maria",
-    "Roberta votou em Maria",
-    "Roberto votou em Matheus",
-    "Maria votou em Joao",
-    "Joao votou em Joao",
-    "Matheus votou em Maria",
-    "Roberto votou em Maria",
-    "Roberta votou em Joao"]
+                       "Joao votou em Taiane",
+                       "Taiane votou em Joao",
+                       "Matheus votou em Maria",
+                       "Roberta votou em Maria",
+                       "Roberto votou em Matheus",
+                       "Maria votou em Joao",
+                       "Joao votou em Joao",
+                       "Matheus votou em Maria",
+                       "Roberto votou em Maria",
+                       "Roberta votou em Joao"]
 
 votos_validos = []
 votos_invalidos = []
