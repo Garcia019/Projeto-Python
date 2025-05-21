@@ -25,6 +25,16 @@ Revisar os principais fundamentos da linguagem Python de forma ativa, estruturad
 
 Este projeto faz parte do meu plano de 30 dias de disciplina e execução com 2h diárias. Ao final deste ciclo, servirá como base técnica para iniciar um projeto de IA gráfica com Python.
 
+## 🎨 Padrão de Código
+
+Todo o código em Python deste repositório segue a convenção de estilo [PEP 8](https://peps.python.org/pep-0008/), garantindo legibilidade, boas práticas e padronização.
+
+- Código indentado corretamente
+- Espaçamentos, nomes de variáveis e funções padronizados
+- Linhas dentro do limite recomendado (máximo 79 caracteres quando possível)
+- Nomes descritivos para funções, métodos e variáveis
+
+
 ⚠️ Nota: No início do curso, os registros estavam organizados em um único notebook por seção (ex: `secao_05_fundamentos_python.ipynb`). A partir do Dia 5 do projeto, essa estrutura foi desmembrada em arquivos individuais por aula, seguindo o padrão `SXXAXX_TITULO.ipynb`, para facilitar rastreamento, versionamento e reusabilidade.
 
 ---
