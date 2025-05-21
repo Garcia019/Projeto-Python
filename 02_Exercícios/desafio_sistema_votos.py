@@ -98,12 +98,14 @@ for participante, voto in votos_processados.items():
     if voto[0] == minimo_voto:
         participantes_recompensados.append(participante)
 
-print("\nO(s) participante(s) que foi/foram recompensado(s) por ter/terem menos votos no programa foi/foram:\n")
+print("""\nO(s) participante(s) que foi/foram recompensado(s)
+      por ter/terem menos votos no programa foi/foram:\n""")
 for participante in participantes_recompensados:
     print(participante)
 
 if len(eliminados) == 1:
-    print(f"O participante eliminado foi o(a) {eliminados[0][0]} com {-eliminados[0][1][0]} votos!")
+    print(f"""O participante eliminado foi o(a) {eliminados[0][0]}
+          com {-eliminados[0][1][0]} votos!""")
 else:
     print("\nVamos para o empate entre...\n")
     for eliminado in eliminados:
@@ -114,4 +116,5 @@ else:
             menor_posicao_voto = eliminado[1][1]
     for eliminado in eliminados:
         if eliminado[1][1] == menor_posicao_voto:
-            print(f"{eliminado[0]} com {-eliminado[1][0]} votos e com o ultimo voto na {eliminado[1][1]} posicao!")
+            print(f"""{eliminado[0]} com {-eliminado[1][0]} votos e
+                  com o ultimo voto na {eliminado[1][1]} posicao!""")

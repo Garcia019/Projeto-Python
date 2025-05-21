@@ -1,6 +1,6 @@
 # 1. Desafio Matriz Rotacionada
 """
-Dada uma matriz quadrada (lista de listas) de inteiros, escreva uma função 
+Dada uma matriz quadrada (lista de listas) de inteiros, escreva uma função
 que rotacione a matriz 90° no sentido horário sem usar bibliotecas externas.
 """
 
