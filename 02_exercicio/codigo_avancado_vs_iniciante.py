@@ -5,6 +5,7 @@ porem com níveis diferentes de detalhes e otimização
 
 import unicodedata
 
+
 def remover_acentos_iniciante(texto):
     texto = unicodedata.normalize('NFD', texto)
     texto_sem_acentos = ''
@@ -14,10 +15,10 @@ def remover_acentos_iniciante(texto):
     return texto_sem_acentos
 
 
-
 def remover_acentos_avancado(texto):
     texto_normalizado = unicodedata.normalize('NFD', texto)
-    texto_sem_acentos = ''.join([c for c in texto_normalizado if not unicodedata.combining(c)])
+    texto_sem_acentos = ''.join([c for c in texto_normalizado
+                                 if not unicodedata.combining(c)])
     return texto_sem_acentos
 
 

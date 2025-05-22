@@ -37,7 +37,7 @@ def contar_consoantes(frase):
     quantidade_consoantes = 0
     consoantes_encontradas = ""
     for letra in frase:
-        if letra.lower() in consoantes:
+        if remover_acentos(letra.lower()) in consoantes:
             quantidade_consoantes += 1
             consoantes_encontradas = consoantes_encontradas + f"{letra}, "
     return quantidade_consoantes, consoantes_encontradas
@@ -58,7 +58,9 @@ if __name__ == "__main__":
     frase = input("Digite a frase escolhida:")
     print("Bem-vindo ao Analisador de Texto!")
     print(f"Na sua frase há {contar_palavras(frase)} palavra(s)!")
-    print(f"Na sua frase há {contar_vogais(frase)[1]} que são {contar_vogais(frase)[0]} vogais!")
-    print(f"Na sua frase há {contar_consoantes(frase)[1]} que são {contar_consoantes(frase)[0]} consoantes!")
+    print(f"""Na sua frase há {contar_vogais(frase)[0]} vogais, sendo
+          as seguintes contabilizadas {contar_vogais(frase)[1]}!""")
+    print(f"""Na sua frase há {contar_consoantes(frase)[0]} consoantes, sendo
+          as seguintes contabilizadas {contar_consoantes(frase)[1]}!""")
     print(f""" palavra mais longa da sua frase é {palavra_mais_longa(frase)[0]}
           com {palavra_mais_longa(frase)[1]} letras!""")
