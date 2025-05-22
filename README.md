@@ -8,18 +8,18 @@ Revisar os principais fundamentos da linguagem Python de forma ativa, estruturad
 
 ## 🗂 Estrutura
 
-- `01_Conteúdo/` – Todo o conteúdo do curso  com comentários pessoais e realização dos exemplos
-- `02_Exercícios/` – Resolução dos exercícios propostos no curso
-- `03_Instruções/` – Anotações pessoais sobre uso de ferramentas e organização
-- `04_Documentação/` – Documentação de Consulta do Curso entre outros livros ou docs 
+- `01_conteudo/` – Todo o conteúdo do curso  com comentários pessoais e realização dos exemplos
+- `02_exercicios/` – Resolução dos desafios e exercícios práticos propostos no curso, organizados em arquivos `.py` nomeados conforme o tema
+- `03_instrucoes/` – Anotações pessoais sobre uso de ferramentas e organização
+- `04_documentos/` – Documentação de Consulta do Curso entre outros livros ou docs 
 
 ## 🚀 Metodologia
 
-- Um notebook por aula: `SXXAXX_TITULO.ipynb` (ex: `S05A45_NUMEROS#01.ipynb`)
-- Cada notebook contém código prático + explicações
-- Curso Python 3 - Curso Completo do Básico ao Avançado
+- Um notebook por aula → `SXXAXX_TITULO_DA_AULA.ipynb`
+- Cada notebook contém explicações, exemplos práticos e reflexões pessoais
 - Commits diários no final de cada sessão de estudo
-- Organização clara e incremental
+- Organização clara, incremental e rastreável
+- Prática constante de testes, refatoração e melhoria do código
 
 ## 📅 Progresso
 
@@ -31,11 +31,17 @@ Todo o código em Python deste repositório segue a convenção de estilo [PEP 8
 
 - Código indentado corretamente
 - Espaçamentos, nomes de variáveis e funções padronizados
-- Linhas dentro do limite recomendado (máximo 79 caracteres quando possível)
+- Linhas dentro do limite recomendado (máximo 79 caracteres sempre que possível)
 - Nomes descritivos para funções, métodos e variáveis
+- Remoção de caracteres problemáticos para ambientes (ex: acentos e `#` nos nomes dos arquivos)
 
+## ⚠️ Notas sobre a reorganização do projeto
 
-⚠️ Nota: No início do curso, os registros estavam organizados em um único notebook por seção (ex: `secao_05_fundamentos_python.ipynb`). A partir do Dia 5 do projeto, essa estrutura foi desmembrada em arquivos individuais por aula, seguindo o padrão `SXXAXX_TITULO.ipynb`, para facilitar rastreamento, versionamento e reusabilidade.
+Durante os primeiros dias, os notebooks estavam diretamente salvos dentro da pasta `conteudo` sem divisão por seções. A partir do Dia 7 do projeto, realizei uma reorganização completa para melhorar a navegação, padronização e compatibilidade com ferramentas como o Jupyter Notebook. Isso incluiu:
+
+- Criação de subpastas por seção (`secao_05`, `secao_06`, `secao_07`, ...)
+- Remoção de acentos nos nomes das pastas (`Conteúdo` → `conteudo`, etc.)
+- Padronização dos nomes dos arquivos substituindo caracteres especiais (`#` → `_`)
 
 ---
 
