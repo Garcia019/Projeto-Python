@@ -34,25 +34,38 @@ def media_lista(lista):
 
 def somatorio_pares(lista):
     quantidade_par = 0
+    pares = []
     for numero in lista:
         if numero % 2 == 0:
             quantidade_par += 1
-    return quantidade_par
+            pares.append(numero)
+    return quantidade_par, pares
 
 
 def somatorio_impares(lista):
     quantidade_impares = 0
+    impares = []
     for numero in lista:
-        if numero % 2 == 0:
+        if numero % 2 != 0:
             quantidade_impares += 1
-    return quantidade_impares
+            impares.append(numero)
+    return quantidade_impares, impares
 
 
 if __name__ == "__main__":
     while True:
-        print("\nBem-Vindo ao Analisador de Lista Numérica!")
-        lista = input("Digite uma lista com somente números:")
-        print(lista)
+        print("\nBem-Vindo ao Analisador de Lista Numérica!\n")
+        lista_natural = input("Digite uma lista com números:").split(", ")
+        lista_final = []
+        for numero in lista_natural:
+            if not numero.replace("-", "").isnumeric():
+                print("Formato de lista ou Número Inválido!")
+                break
+            lista_final.append(int(numero))
+        else:
+            break
+    while True:
+        print(f"\nSua lista é {lista_final}")
         opcao = (input("""
 1 - Mostrar Maior Valor.
 2 - Mostrar Menor Valor.
@@ -67,26 +80,33 @@ Digite a opção desejada: """))
         match int(opcao):
             case 1:
                 print(f"""
-O maior valor da lista é o número {maior_valor_lista(lista)}!
+O maior valor da lista é o número {maior_valor_lista(lista_final)}!
 """)
             case 2:
                 print(f"""
-O menor valor da lista é o número {menor_valor_lista(lista)}!
+O menor valor da lista é o número {menor_valor_lista(lista_final)}!
 """)
             case 3:
                 print(f"""
-A média dos números da lista é:{media_lista(lista)}.
+A média dos números da lista é: {media_lista(lista_final)}!
 """)
             case 4:
                 print(f"""
-A quantidade total de números pares é {somatorio_pares(lista)}
+
+A quantidade total de números pares é
+
+{somatorio_pares(lista_final)[0]} !
+Sendo eles {somatorio_pares(lista_final)[1]} !
 """)
             case 5:
                 print(f"""
-A quantidade total de números ímpares é {somatorio_impares(lista)}
+A quantidade total de números ímpares é
+
+{somatorio_impares(lista_final)[0]} !
+Sendo eles {somatorio_impares(lista_final)[1]} !
 """)
             case 6:
-                print("Saindo do menu opções!")
+                print("\nSaindo do menu opções!")
                 break
             case _:
                 print("\nOpção inválida!")

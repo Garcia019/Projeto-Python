@@ -4,10 +4,10 @@
 # (próximo número é a soma dos dois últimos números)
 def fibonacci(quantidade_numeros=20):
     resultado = [0, 1]
-    while True:
+    for _ in range(quantidade_numeros-2):
+        # _ é comumente utilizado na comunidade de python '
+        # como varável não utilizada durante a utilização do for
         resultado.append(sum(resultado[-2:]))
-        if quantidade_numeros == len(resultado):
-            break
     return resultado
 
 
